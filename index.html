@@ -31,16 +31,17 @@
     }
 
     .overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: black;
-      text-align: center;
-      font-size: 2rem;
-      font-weight: bold;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  font-size: 5vw; /* <-- ez arányos a képernyő szélességével */
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
 
     @media (max-width: 768px) {
       .overlay {
