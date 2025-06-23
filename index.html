@@ -31,22 +31,18 @@
     }
 
     .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  text-align: center;
-  font-size: 5vw; /* <-- ez arányos a képernyő szélességével */
-  font-weight: bold;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-}
-
-
-    @media (max-width: 768px) {
-      .overlay {
-        font-size: 2rem;
-      }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      text-align: center;
+      font-size: clamp(1rem, 6vw, 48px); /* reszponzív betűméret */
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.2); /* halvány áttetsző háttér, ha kell */
+      border-radius: 1rem;
     }
   </style>
 </head>
